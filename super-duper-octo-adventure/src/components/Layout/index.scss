@@ -23,13 +23,17 @@
   margin-left: -20px;
 }
 
-// body {
-//   margin: 0;
-//   font-family: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
-//   color: #444;
-//   background: #022c43;
-//   overflow: hidden;
-//   display: block;
-//   -webkit-font-smoothing: antialised;
-//   -moz-osx-font-smoothing: grayscale;
-// }
+.container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
