@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import AnimatedLetters from '../../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-n.png'
 import './index.scss'
 
@@ -29,7 +30,11 @@ const Home = () => {
           {' '}
           Hi, <br /> I'm
           <img src={LogoTitle} alt="developer" />
-          ita
+          <AnimatedLetters
+            letterClass={letterClass}
+            strArray={nameArray}
+            idx={15}
+          />
           <br />
           web developer
         </h1>
